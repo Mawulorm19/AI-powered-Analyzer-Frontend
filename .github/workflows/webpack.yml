@@ -26,3 +26,8 @@ jobs:
       run: |
         npm install
         npx webpack
+
+        - name: Install Dependencies
+        run: npm install
+        - name: Install Webpack CLI
+        run: npm install -D webpack-cli
