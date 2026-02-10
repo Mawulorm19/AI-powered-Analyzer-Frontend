@@ -23,9 +23,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install Dependencies
-      run: |
-       npm install
-       npm install -D webpack-cli
+      run: npm install
+
+    - name: Install Webpack CLI
+      run: npm install -D webpack-cli
 
     - name: Build
       run: npx webpack
